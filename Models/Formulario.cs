@@ -22,6 +22,6 @@ namespace webapp.Models
         [Display(Name = "Experience")]
         public int? Experience {get; set; }
          [Display(Name = "Date")]
-        public string? Date {get; set; }
+        public int? Date {get; set; }
     }
 }

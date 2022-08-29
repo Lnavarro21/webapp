@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Acer\\Desktop\\Mifolder\\webapp\\webapp.csproj": {}
+    "c:\\Users\\Acer\\Desktop\\Mifolder\\webapp\\webapp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Acer\\Desktop\\Mifolder\\webapp\\webapp.csproj": {
+    "c:\\Users\\Acer\\Desktop\\Mifolder\\webapp\\webapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer\\Desktop\\Mifolder\\webapp\\webapp.csproj",
+        "projectUniqueName": "c:\\Users\\Acer\\Desktop\\Mifolder\\webapp\\webapp.csproj",
         "projectName": "webapp",
-        "projectPath": "C:\\Users\\Acer\\Desktop\\Mifolder\\webapp\\webapp.csproj",
+        "projectPath": "c:\\Users\\Acer\\Desktop\\Mifolder\\webapp\\webapp.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer\\Desktop\\Mifolder\\webapp\\obj\\",
+        "outputPath": "c:\\Users\\Acer\\Desktop\\Mifolder\\webapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config"
