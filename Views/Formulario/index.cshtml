@@ -1,0 +1,72 @@
+@model webapp.Models.Formulario
+
+
+<div class="text-right">
+    <h1 class="display-4"><strong>Complete with form</strong></h1>
+    <form asp-controller="Formulario" asp-action="Create">
+        <br/>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <label asp-for="FirstName" class="control-label"></label>
+        <input asp-for="FirstName" class="form-control" />
+        <br/>
+        <label asp-for="LastName" class="control-label"></label>
+        <input asp-for="LastName" class="form-control" />
+        <br/>
+        <label asp-for="JobTitle" class="control-label"></label>
+        <input asp-for="JobTitle" class="form-control" />
+        <br/>
+    <label asp-for="HighestLevelOfEducation" class="control-label"></label>
+    <div class="form-check">
+            <input class="form-check-input" type="radio">
+            <label class="form-check-label" >Hight School</label>
+    </div>
+    <div class="form-check">
+            <input class="form-check-input" type="radio">
+            <label class="form-check-label" >College</label>
+    </div>
+    <div class="form-check">
+            <input class="form-check-input" type="radio">
+            <label class="form-check-label" >Grad School</label>
+    </div>
+    <br/>
+     <label asp-for="Sex" class="control-label"></label>
+     <div class="form-check">
+            <input class="form-check-input" type="checkbox">
+            <label class="form-check-label" >Male</label>
+    </div>
+    <div class="form-check">
+            <input class="form-check-input" type="checkbox">
+            <label class="form-check-label" >Female</label>
+    </div>
+    <div class="form-check">
+            <input class="form-check-input" type="checkbox">
+            <label class="form-check-label" >Prefere not to say</label>
+    </div>
+    <br/>
+    <select class="col-sm-4 col-sm-offset-2">
+            <option selected>Select an option</option>
+            <option value="1">0-1</option>
+            <option value="2">2-4</option>
+            <option value="3">5-9</option>
+            <option value="3">10+</option>
+     </select>
+     <br/>
+     <div class="col-sm-4">
+        <strong><label>Date</label></strong>
+        <input type="text"
+               class="form-control"
+               id="datepicker"
+               data-provide="datepicker"
+               placeholder="mm/dd/yyyy"
+               data-date-autoclose="true"
+               data-date-today-highlight="true" >
+     </div>
+       
+       <br/>
+        <button type="submit" class="btn btn-primary">Submit</button> 
+    </form>
+    <h1>@ViewData["Message"]</h1>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
