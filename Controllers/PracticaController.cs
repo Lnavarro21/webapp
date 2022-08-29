@@ -28,19 +28,27 @@ namespace webapp.Controllers
      [HttpPost]
         public IActionResult Create(Practica objPractica)
         {
-            int resultado;
-            double Igv;
-            int creditos = 3;
-            int i;
-            
+        double Igv;
+        double res;
+        double total;
+        int i = 0;
+        
+        if (objPractica.Matematica)
+            i = i + 1;
+        if (objPractica.Lenguaje)
+            i = i+1;
+        if (objPractica.Historia)
+            i = i+1;
 
-            if(objPractica.Cursos == 1){
-                else(100*objPractica.creditos);
-            }
-            resultado = objPractica.creditos * objPractica.Cursos;
-            Igv = resultado * 0.18;
-            ViewData["Message"] ="Thanks for submitting your form";
-            return View("Index");
+        res = i * (i * 100);
+        Igv = res * 0.18;
+        total = res + Igv;
+            
+        ViewData["Message1"] = "El costo de los cursos es: " + res.ToString();
+        ViewData["Message2"] = "IGV: " + Igv.ToString();
+        ViewData["Message3"] = "El precio total es: " + total.ToString();
+        
+        return View("Index");
         }
 
 

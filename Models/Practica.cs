@@ -11,7 +11,17 @@ namespace webapp.Models
          [Display(Name = "Datos del Alumno",Prompt = "Ingresar su primer Nombre y su primer Apellido")]
         public string? Nombre {get; set; }
         
-        public int Cursos {get; set; }
+        [Display(Name = "Curso", Prompt = "Cursos")]
+        public string? Cursos { get; set; }
+
+        [Display(Name = "Matematica")]
+        public bool Matematica { get; set; }
+        
+        [Display(Name = "Lenguaje")]
+        public bool Lenguaje { get; set; }
+
+        [Display(Name = "Historia")]
+        public bool Historia { get; set; }
 
     }
 }
