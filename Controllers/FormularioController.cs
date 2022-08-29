@@ -27,7 +27,7 @@ namespace webapp.Controllers
         [HttpPost]
         public IActionResult Create(Formulario objFormulario)
         {
-            ViewData["Message"] ="Thanks for submitting your form";
+            ViewData["Message"] ="Gracias por llenar el formulario";
             return View("Index");
         }
 
